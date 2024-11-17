@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.14.0/sweetalert2.css" integrity="sha512-Gebe6n4xsNr0dWAiRsMbjWOYe1PPVar2zBKIyeUQKPeafXZ61sjU2XCW66JxIPbDdEH3oQspEoWX8PQRhaKyBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculadora Btu</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav__sidebar">
+                <li class="nav__item"><a href="#" onclick="closesidebar()"   class="nav__a">     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li class="nav__item"><a href="#" class="nav__a">Calculadora</a></li>
+                <li class="nav__item"><a class="nav__a" href="">Informacion</a></li>
+                <li class="nav__item"><a class="nav__a" href="">AC recomendados</a></li>
+            </ul>
+            <ul class="nav__ul">
+                <li class="nav__item hideonMobile"><a href="" class="nav__a">Calculadora</a></li>
+                <li class="nav__item hideonMobile"><a class="nav__a" href="">Informacion</a></li>
+                <li class="nav__item hideonMobile"><a class="nav__a" href="">AC recomendados</a></li>
+                <li class="nav__item"><a
+                    onclick="showsideBar()" class="nav__a" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </a></li>
+            </ul>
+
+        </nav>
+
+
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="title">Calcula tus BTU necesarios</h1>
+            <p class="text">Calculamos la potencia necesaria para tu espacio y te recomendados opciones</p>
+        </div>
+
+        <section class="section-1">
+            <h2 class="text-section">Como calculo los btu</h2>
+            <p class="content-section">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium doloribus neque, laudantium inventore deserunt aliquid exercitationem voluptas error amet quos possimus doloremque ea? Recusandae esse earum saepe, minus autem eveniet.<br><br>
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dolor laboriosam facere est error odio rerum distinctio quisquam necessitatibus. Omnis minus, porro dignissimos exercitationem neque nulla mollitia voluptates tempore fuga.
+            </p>
+
+        </section>
+        
+        <div class="container-calculator">
+            <div class="calculator">
+
+                <form>
+                    <span class="badge">Medidas de IS</span>
+                    
+                    <div class="form-container">
+                        <label>Largo</label>
+                        <input id="largo" class="form-control"  type="text">    
+                    </div>
+                    <div class="form-container">
+                        <label>Ancho</label>
+                        <input id="ancho" class="form-control"  type="text">    
+                    </div>
+                    <div id="altura_c" class="form-container">
+                    <label>Alto</label>
+                    <input id="altura" class="form-control" type="text">   
+                    </div>
+             
+                    <div class="form-container">
+                        <label>Personas</label>
+                        <input id="personas"  class="form-control"  type="number">   
+                    </div>
+                    <div class="form-container">
+                        <label>Ventanas</label>
+                        <input id="ventanas" class="form-control"  type="number">   
+                    </div>
+
+                    <button type="button" class="btn">Calcular</button>
+
+                    
+
+                </form>
+
+
+            </div>
+
+
+
+        </div>
+        <div class="container bg-resultados">
+            <h2 class="text-section">Aires Acondicionados recomendados</h2>
+            <div class="resultados">
+
+            </div>
+
+        </div>
+    </main>
+
+
+    
+</body>
+<script src="js/app.js">
+</script>
+<script src="js/aireDB.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.14.0/sweetalert2.min.js" integrity="sha512-OlF0YFB8FRtvtNaGojDXbPT7LgcsSB3hj0IZKaVjzFix+BReDmTWhntaXBup8qwwoHrTHvwTxhLeoUqrYY9SEw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>
